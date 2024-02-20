@@ -1,0 +1,82 @@
+{
+  "_from": "cordova-plugin-badge-fix@>=0.8.10",
+  "_id": "cordova-plugin-badge-fix@0.8.10",
+  "_inBundle": false,
+  "_integrity": "sha512-4yvfe5Qil9Bz7OTSnVNVkQV5Mru0wSAgfAhBE/myo9aPLT7yjs3sn963Shg4MCDPlVCganS0spJ384fsyYB6lA==",
+  "_location": "/cordova-plugin-badge-fix",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-badge-fix@>=0.8.10",
+    "name": "cordova-plugin-badge-fix",
+    "escapedName": "cordova-plugin-badge-fix",
+    "rawSpec": ">=0.8.10",
+    "saveSpec": null,
+    "fetchSpec": ">=0.8.10"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-badge-fix/-/cordova-plugin-badge-fix-0.8.10.tgz",
+  "_shasum": "ab09f18bf1a11d76ecdcc02b199af18a1a4365f1",
+  "_spec": "cordova-plugin-badge-fix@>=0.8.10",
+  "_where": "D:\\project\\Node\\geoappionic\\geoappionic",
+  "author": {
+    "name": "Sebastián Katzer"
+  },
+  "bugs": {
+    "url": "https://github.com/bhandaribhumin/cordova-plugin-badge-fix/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-badge-fix",
+    "platforms": [
+      "ios",
+      "osx",
+      "android",
+      "browser",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Shows the count of unread messages as a badge on the app icon.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.0.0"
+    },
+    {
+      "name": "apple-ios",
+      "version": ">=10.0.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=4"
+    },
+    {
+      "name": "cordova-plugman",
+      "version": ">=4.2.0"
+    }
+  ],
+  "homepage": "https://github.com/bhandaribhumin/cordova-plugin-badge-fix#readme",
+  "keywords": [
+    "appplant",
+    "badge",
+    "shortcutbadger",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-android",
+    "cordova-browser",
+    "cordova-windows"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-badge-fix",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhandaribhumin/cordova-plugin-badge-fix.git"
+  },
+  "version": "0.8.10"
+}

@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Actualizar Marcador</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <form class="list-form" class="animated fadeIn">
+    <ion-row>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="clipboard" item-start></ion-icon>
+            Título
+          </ion-label>
+          <ion-input name="title" [(ngModel)]="marker.title" rows="6"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="clipboard" item-start></ion-icon>
+            Información
+          </ion-label>
+          <ion-textarea name="description" [(ngModel)]="marker.info" rows="6"></ion-textarea>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="clipboard" item-start></ion-icon>
+            Dirección
+          </ion-label>
+          <ion-input name="address" [(ngModel)]="marker.address" rows="6"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-6 *ngFor="let filter of filter_keys">
+        <ion-item>
+          <ion-label stacked class="filters">
+            <!--{{filter.dataname}}-->
+            {{filter | translate}}
+          </ion-label>
+          <ion-input name="{{filter}}" rows="6" [(ngModel)]="filters[filter]"></ion-input>
+        </ion-item>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 text-center>
+        <button [disabled]="disabledButton" ion-button block color="danger" (click)="checkAddress()">Actualizar</button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+</ion-content>

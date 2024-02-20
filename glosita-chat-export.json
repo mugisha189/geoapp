@@ -1,0 +1,88 @@
+{
+  "chat" : [ null, {
+    "users" : {
+      "2" : {
+        "messages" : {
+          "1565288082916" : {
+            "message" : "nada, aqui estamos",
+            "read" : false,
+            "send" : false,
+            "timestamp" : 1565288082916,
+            "user_id" : 2
+          },
+          "1565289094088" : {
+            "message" : "aaaaaa",
+            "read" : false,
+            "send" : false,
+            "timestamp" : 1565289094088,
+            "user_id" : 2
+          }
+        }
+      }
+    }
+  }, {
+    "users" : [ null, {
+      "messages" : {
+        "1565018635652" : {
+          "message" : "holaaaaaaaaaa!!",
+          "read" : true,
+          "send" : true,
+          "timestamp" : 1565018635652,
+          "user_id" : 1
+        },
+        "1565018635888" : {
+          "message" : "que pasaaaaa?",
+          "read" : true,
+          "send" : false,
+          "timestamp" : 1565018635888,
+          "user_id" : 1
+        },
+        "1565288082916" : {
+          "message" : "nada, aqui estamos",
+          "read" : false,
+          "send" : true,
+          "timestamp" : 1565288082916,
+          "user_id" : 1
+        }
+      }
+    }, null, {
+      "messages" : {
+        "1565018635652" : {
+          "message" : "hola, estoy usando glosita!!",
+          "read" : true,
+          "send" : true,
+          "timestamp" : 1565018635652,
+          "user_id" : 3
+        },
+        "1565018635888" : {
+          "message" : "pues muy bien",
+          "read" : true,
+          "send" : false,
+          "timestamp" : 1565018635888,
+          "user_id" : 3
+        },
+        "1565285826403" : {
+          "message" : "que haces?",
+          "read" : false,
+          "send" : true,
+          "timestamp" : 1565285826403,
+          "user_id" : 3
+        }
+      }
+    } ]
+  }, {
+    "users" : {
+      "2" : {
+        "messages" : {
+          "1565285826403" : {
+            "message" : "que haces?",
+            "read" : false,
+            "send" : false,
+            "timestamp" : 1565285826403,
+            "user_id" : 2
+          }
+        }
+      }
+    }
+  } ]
+}

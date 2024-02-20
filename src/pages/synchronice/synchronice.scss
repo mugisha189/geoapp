@@ -1,0 +1,30 @@
+page-synchronice {
+  ion-content {
+    background: url("../assets/imgs/gps_back.png") no-repeat center center fixed,  linear-gradient(to bottom, rgba(161,161,161,1) 0%, rgba(92,92,92,1) 21%, rgba(73,73,73,1) 39%, rgba(54,53,54,1) 57%, rgba(34,34,34,1) 100%);
+    background-size: cover;
+  }
+  .synchronize {
+    padding-top: 8rem;
+  }
+  .conect {
+    padding-top: 3rem;
+  }
+  .synchronize {
+    padding-top: 10rem;
+  }
+  .synchronize h3 {
+    color: white;
+    font-weight: bold;
+  }
+  .entorno {
+    padding: 2rem 2rem 1rem;
+  }
+  .toast-md .toast-wrapper.toast-top, .toast-ios .toast-wrapper.toast-top {
+    background-color: black !important;
+    border-radius: 1rem !important;
+    top: 1rem !important;
+    position: absolute !important;
+    width: 90% !important;
+    transform: translateY(0%);
+  }
+}

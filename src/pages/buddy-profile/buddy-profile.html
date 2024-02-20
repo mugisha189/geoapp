@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Perfil {{user_chat.name}}</ion-title>
+    <!--    <div class="buttons-profile">-->
+    <!--      <ion-icon name="more"></ion-icon>-->
+    <!--    </div>-->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <ion-card>
+    <img class='img-fluid profile' src="{{this.user_photo}}" alt="">
+    <ion-card-content>
+      <ion-card-title text-center="">
+        {{user_chat.name}}
+      </ion-card-title>
+      <p text-center>{{calcularEdad(this.user_chat.birthdate)}} años</p>
+      <br>
+      <p *ngIf="user_chat.description">
+        {{user_chat.description}}
+      </p>
+      <p *ngIf="!user_chat.description">
+        Sin descripción
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row padding-bottom>
+    <ion-col col-12 text-center>
+      <button ion-button block color="danger" (click)="chat()">CHATEAR</button>
+    </ion-col>
+    <ion-col col-12 text-center>
+      <button ion-button block outline color="secondary" (click)="reportUser()">REPORTAR</button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>

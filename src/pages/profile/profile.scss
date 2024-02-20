@@ -1,0 +1,128 @@
+page-profile {
+
+  ion-content {
+    background: url("../assets/imgs/gps_back.png") no-repeat center center fixed,  linear-gradient(to bottom, rgba(161,161,161,1) 0%, rgba(92,92,92,1) 21%, rgba(73,73,73,1) 39%, rgba(54,53,54,1) 57%, rgba(34,34,34,1) 100%);
+    background-size: cover;
+  }
+
+  .item-md, .item-ios {
+    background-color: transparent;
+  }
+
+  .scroll-content {
+    padding: 3rem 16px 0 !important;
+  }
+
+  .toolbar-title, .toolbar-title-ios {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  ion-avatar img {
+    width: 120px !important;
+    height: 120px !important;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  .photo-profile a {
+    margin-top: 2rem;
+    color: color($colors, secondary);
+  }
+
+  .buttons-profile button {
+    float: right;
+    margin-right: 1.5rem !important;
+  }
+
+  .logout-button {
+    margin: 2rem 0;
+    padding: 0rem 2rem;
+  }
+
+  .logout-button a {
+    color: color($colors, danger);
+  }
+
+  .back-button {
+    color: white;
+  }
+
+  ion-label, .label-md, .label-ios {
+    margin: 0;
+    color: dimgrey !important;
+  }
+
+  .item-md, .item-ios {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+  }
+
+  ion-item {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+  }
+
+  ion-item.photo-profile {
+    background-color: transparent !important;
+  }
+
+  .item-md.item-block .item-inner, .item-ios.item-block .item-inner  {
+    border-bottom: none;
+  }
+
+  .toast-md .toast-wrapper.toast-top, .toast-ios .toast-wrapper.toast-top {
+    background-color: black !important;
+    border-radius: 1rem !important;
+    top: 1rem !important;
+    position: absolute !important;
+    width: 90% !important;
+    transform: translateY(0%);
+  }
+
+  ion-input input, ion-select {
+    font-size: 1.5rem;
+  }
+
+  .editImage {
+    background-color: #b3a226;
+    color: white;
+    border-radius: 6rem;
+    padding: 1rem 1.3rem;
+    position: absolute;
+    top: 0;
+    right: 90px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .dateBirth input {
+    margin-top: 0 !important;
+  }
+
+
+  .updateProfile {
+    border-radius: 2px;
+    overflow: hidden;
+    height: 3.6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #488aff;
+    margin: 0.4rem 0.2rem;
+    padding: 0 1.1em;
+  }
+
+  .profile {
+    object-fit: cover;
+  }
+
+  .item-md [item-start], .item-ios [item-start] {
+    margin: 5px 8px 5px 0;
+  }
+
+  .datetime-md, .datetime-ios {
+    padding: 7px 8px 7px 10px;
+  }
+
+}

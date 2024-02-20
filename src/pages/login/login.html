@@ -1,0 +1,45 @@
+<!-- -->
+<ion-content padding class="animated fadeIn login auth-page">
+  <div class="login-content">
+
+    <ion-row margin-bottom>
+      <ion-col col-12 text-center>
+        <img src="assets/imgs/photo.png" alt="" class="img-fluid login-logo">
+      </ion-col>
+    </ion-row>
+
+    <!-- Login form -->
+    <form margin-top>
+      <ion-item>
+        <ion-label fixed>
+          <ion-icon name="mail" item-start></ion-icon>
+          Email
+        </ion-label>
+        <ion-input [(ngModel)]="user.email" type="email" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>
+          <ion-icon name="lock" item-start></ion-icon>
+          Contraseña
+        </ion-label>
+        <ion-input type="password" name="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+
+      <ion-row class="footer-md animated fadeIn">
+        <ion-col col-12 text-center>
+          <button ion-button block color="secondary" (click)="login()">ENTRAR</button>
+        </ion-col>
+        <ion-col col-12 text-center>
+          <button ion-button block color="danger" (click)="resgister()">REGISTRARSE</button>
+        </ion-col>
+        <ion-col col-12 text-center>
+          <p text-center (click)="forgotPass()"><strong>¿Contraseña olvidada?</strong></p>
+        </ion-col>
+      </ion-row>
+
+    </form>
+
+  </div>
+</ion-content>
+

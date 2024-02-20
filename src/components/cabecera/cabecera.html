@@ -1,0 +1,20 @@
+<ion-navbar>
+  <ion-row>
+    <ion-col col-3 text-center>
+      <ion-icon name="home" color="light" (click)="goHome()"></ion-icon>
+    </ion-col>
+    <ion-col col-3 text-center>
+      <ion-icon *ngIf="menu == 'map'" name="globe" color="secondary" (click)="goMap()"></ion-icon>
+      <ion-icon *ngIf="menu != 'map'" name="globe" color="light" (click)="goMap()"></ion-icon>
+    </ion-col>
+    <ion-col col-3 text-center>
+      <span *ngIf="notifications_num > 0" class="animated bounce notifications">{{notifications_num}}</span>
+      <ion-icon *ngIf="menu == 'chat'" name="chatbubbles" color="secondary" (click)="goChats()"></ion-icon>
+      <ion-icon *ngIf="menu != 'chat'" name="chatbubbles" color="light" (click)="goChats()"></ion-icon>
+    </ion-col>
+    <ion-col col-3 text-center>
+      <ion-icon *ngIf="menu == 'filters'" name="options" color="secondary" (click)="goFilters()"></ion-icon>
+      <ion-icon *ngIf="menu != 'filters'" name="options" color="light" (click)="goFilters()"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-navbar>

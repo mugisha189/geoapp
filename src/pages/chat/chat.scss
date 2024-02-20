@@ -1,0 +1,142 @@
+page-chat {
+
+  ion-content {
+    background-color: white;
+    background: url("../assets/imgs/login-bg.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .toolbar-title {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .back-button {
+    color: color($colors, light);
+  }
+
+  .item-inner {
+    border-bottom: none !important;
+  }
+
+  .item-md, .item-ios {
+    padding-left: 0;
+    background-color: transparent;
+  }
+
+  .label-md, .label-ios {
+    margin: 6px 0;
+  }
+
+  .item-md.item-block .item-inner, .item-ios.item-block .item-inner {
+    padding: 0 8px;
+  }
+
+  .item-md ion-badge, .item-ios ion-badge {
+    font-size: 1.5rem;
+    white-space: initial;
+    line-height: 1.4;
+  }
+
+  .item-md ion-badge.sent-msg, .item-ios ion-badge.sent-msg {
+    border-radius: 1.5rem 1.5rem 0;
+    text-align: left !important;
+  }
+
+  .item-md ion-badge.received-msg, .item-ios ion-badge.received-msg {
+    border-radius: 1rem 1.5rem 1rem 0;
+  }
+
+  ion-footer .button-inner {
+    color: color($colors, danger);
+  }
+
+  ion-textarea textarea {
+    width: 100% !important;
+    padding: 10px 10px 0 !important;
+    border-radius: 1rem !important;
+    border: 1px solid darkgrey !important;
+    background-color: white !important;
+  }
+
+  .texto-enviar {
+    padding-left: 1.5rem;
+  }
+
+  .sendMessage {
+    margin: 13px 8px;
+  }
+
+  ion-icon {
+    font-size: 2rem;
+  }
+
+  .sendMessage ion-icon {
+    font-size: 3.5rem;
+    padding: 0;
+  }
+
+  .received-msg .time {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    padding: .2rem;
+  }
+
+  .sent-msg .time {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    padding: .2rem;
+  }
+
+  .sent-msg {
+    max-width: 100%;
+    float: right;
+    padding: 1rem 5rem 1rem 2rem !important;
+  }
+
+  .received-msg {
+    max-width: 100%;
+    padding: 1rem 2rem 1rem 5rem !important;
+  }
+
+  .fecha {
+    margin: 2rem 0;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .fecha span {
+    background-color: lightgray;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+  }
+
+  .profile {
+    width: 40px !important;
+    height: 40px !important;
+    border: 1px solid lightgray;
+    border-radius: 2rem;
+    background-color: white;
+    margin-right: 1rem;
+  }
+
+  .buttons-profile button {
+    float: right;
+    border: none;
+    font-size: 1.5em;
+  }
+
+  p.block_user {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,32 @@
+<ion-content padding>
+
+  <ion-row>
+    <ion-col col-12 text-center>
+      <img src="assets/imgs/photo.png" alt="" class="img-fluid animated fadeIn main-logo">
+    </ion-col>
+  </ion-row>
+
+<!--  <ion-row *ngIf=" synchronize_complete == false" class="synchronize">-->
+<!--    <ion-col col-2></ion-col>-->
+<!--    <ion-col col-8 text-center>-->
+<!--      <img  (click)="synchronize()" src="assets/imgs/iniciar-conexion.png" alt="" class="img-fluid animated fadeInDown">-->
+<!--    </ion-col>-->
+<!--    <ion-col col-2></ion-col>-->
+<!--  </ion-row>-->
+
+  <ion-footer class="footer">
+    <ion-col col-12 text-center>
+      <button ion-button block color="danger" (click)="connect()" class="connect animated fadeInDown">MUNDO</button>
+    </ion-col>
+    <ion-col col-12 text-center>
+      <button ion-button block outline color="secondary" (click)="markers()" class="connect animated fadeInDown">MARCADORES</button>
+    </ion-col>
+    <ion-col col-12 text-center>
+      <button ion-button block outline color="light" (click)="showProfle()" class="animated fadeInRight">PERFIL</button>
+    </ion-col>
+<!--    <ion-col col-12 text-center>-->
+<!--      <button ion-button block outline color="light" (click)="comingSoon()" class="animated fadeInLeft">OPCIONES</button>-->
+<!--    </ion-col>-->
+  </ion-footer>
+
+</ion-content>

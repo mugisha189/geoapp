@@ -1,0 +1,40 @@
+{
+  "chat": {
+    "2": {
+      "users": {
+        "3": {
+          "messages": {
+            "1565018635652": {
+              "message": "hola, estoy usando glosita!!",
+              "timestamp": 1565018635652,
+              "send": true,
+              "read": true
+            },
+            "1565018635888": {
+              "message": "pues muy bien",
+              "timestamp": 1565018635888,
+              "send": false,
+              "read":  true
+            }
+          }
+        },
+        "1": {
+          "messages": {
+            "1565018635652": {
+              "message": "holaaaaaaaaaa!!",
+              "timestamp": 1565018635652,
+              "send": true,
+              "read":  true
+            },
+            "1565018635888": {
+              "message": "que pasaaaaa?",
+              "timestamp": 1565018635888,
+              "send": false,
+              "read":  true
+            }
+          }
+        }
+      }
+    }
+  }
+}

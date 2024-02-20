@@ -1,0 +1,48 @@
+page-filters {
+
+  .range-md.range-has-pin {
+    padding-top: 8px;
+  }
+
+  ion-select {
+    max-width: inherit;
+  }
+
+  ion-select .select-text {
+    color: color($colors, danger);
+  }
+
+  .label-md, .label-ios {
+    color: #222222 !important;
+  }
+
+  .range-item .item-inner {
+    border-bottom: none !important;
+    padding: .3rem 0 !important;
+  }
+
+  .range-item2 .item-inner {
+    padding-top: 0;
+  }
+
+  .item-inner {
+    padding: 1rem 0;
+  }
+
+  .range-item .label {
+    margin-bottom: 0;
+  }
+
+  button {
+    height: 30px !important;
+  }
+
+  button span {
+    font-size: 1.5rem;
+  }
+
+  button ion-icon {
+
+  }
+
+}

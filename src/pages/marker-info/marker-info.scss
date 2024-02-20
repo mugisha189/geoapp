@@ -1,0 +1,70 @@
+page-marker-info {
+  ion-content {
+    background: url("../assets/imgs/gps_back.png") no-repeat center center fixed,  linear-gradient(to bottom, rgba(161,161,161,1) 0%, rgba(92,92,92,1) 21%, rgba(73,73,73,1) 39%, rgba(54,53,54,1) 57%, rgba(34,34,34,1) 100%);
+    background-size: cover;
+  }
+  .toolbar-title, .toolbar-title-ios {
+    color: white;
+    text-transform: uppercase;
+  }
+  .back-button {
+    color: white;
+  }
+  ion-card {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+  }
+  ion-card img {
+    padding: 2rem 5rem 0rem;
+  }
+
+  .profile {
+    object-fit: cover;
+  }
+
+  ion-row {
+    margin: 4px;
+  }
+
+  .bar-button {
+    color: color($colors, light);
+  }
+
+  .label-ios {
+    margin: 0;
+  }
+
+  ion-label, .label-md {
+    margin: 0;
+    color: dimgrey !important;
+    font-size: 1.5rem !important;
+  }
+
+  .item-md, .item-ios {
+    margin-bottom: 1rem;
+    //border-radius: 1rem;
+  }
+
+  ion-item {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+  }
+
+  ion-input {
+    color: black;
+  }
+
+  .filters {
+    margin-top: 11px !important;
+    margin-bottom: 10px !important;
+  }
+
+  p {
+    font-size: 1.8rem !important;
+  }
+
+  .text-input[disabled] {
+    color: black;
+    font-size: 1.8rem;
+    opacity: 1 !important;
+  }
+
+}

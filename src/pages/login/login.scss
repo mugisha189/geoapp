@@ -1,0 +1,55 @@
+page-login {
+  ion-content {
+    background: url("../assets/imgs/gps_back.png") no-repeat center center fixed,  linear-gradient(to bottom, rgba(161,161,161,1) 0%, rgba(92,92,92,1) 21%, rgba(73,73,73,1) 39%, rgba(54,53,54,1) 57%, rgba(34,34,34,1) 100%);
+    background-size: cover;
+  }
+  .login-content {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 2rem 4rem;
+  }
+  .scroll-content {
+    padding: 0 16px !important;
+  }
+  ion-label, .label-md, .label-ios {
+    margin: 0;
+    color: dimgrey !important;
+  }
+  .logo img {
+    max-height: 250px !important;
+  }
+  form {
+    margin-top: 5rem !important;
+    max-height: 200px;
+  }
+  .item-md, .item-ios {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+  }
+  ion-item {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+  }
+  ion-input {
+    color: black;
+  }
+  p strong {
+    color: color($colors, light);
+  }
+  .text-input-md, .text-input-ios {
+    margin: 0;
+    padding-left: 10px;
+  }
+  .footer {
+    padding: 2rem 4rem;
+  }
+  button {
+    margin: 0 !important;
+    padding: 2rem !important;
+  }
+  .footer-md {
+    margin-top: 5rem !important;
+  }
+  .login-logo {
+    width: 60%;
+  }
+}

@@ -1,0 +1,158 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@import "../theme/animate.min";
+
+@font-face {
+  font-family: Electromagnetic_Lungs;
+  src: url(../assets/fonts/eletromagneticLungs.otf) format("otf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: SFNewRepublic;
+  src: url(../assets/fonts/SFNewRepublic.ttf) format("ttf");
+  font-weight: 200;
+}
+
+* {
+  font-family: Electromagnetic_Lungs;
+}
+
+.tabs-md .tabbar {
+  background-color: color($colors, danger);
+}
+
+.tab-button .tab-button-icon, .tab-button .tab-button-text {
+  color: white;
+}
+
+.tabs a[aria-selected="true"] .tab-button-text, .tabs a[aria-selected="true"] .tab-button-icon {
+  color: color($colors, secondary) !important;
+}
+
+//rgb(201,57,58)
+
+.toolbar-background-md, .toolbar-background-ios {
+  //background: linear-gradient(#dc2430, #222222);
+  background: linear-gradient(to left, #b03c50 0%, rgb(176, 46, 57) 66%, rgb(154, 34, 33) 100%) !important;
+  //background: linear-gradient(to left,#7b4397,#dc2430) !important;
+  //background: color($colors, danger);
+}
+
+.toolbar-ios ion-title {
+  position: inherit;
+  padding: 0;
+}
+
+.toolbar-content-ios {
+  display: contents;
+}
+
+.toolbar-content-md{
+  display: inherit;
+}
+
+ion-toast{
+  width: 90%;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.toast-wrapper, .toast-top {
+  border-radius: 1rem;
+  background: #222 !important;
+}
+
+.popover-content {
+//  top: 5rem !important;
+  right: 2rem !important;
+  left: auto !important;
+//  max-width: 60%;
+}
+
+.popover-content ion-list {
+  margin: 0;
+}
+
+.action-sheet-group button:nth-child(2) ion-icon::before {
+  color: color($colors, danger) !important;
+}
+
+.action-sheet-group button:nth-child(3) ion-icon::before {
+  color: color($colors, secondary) !important;
+}
+
+.action-sheet-group button:nth-child(4) ion-icon::before {
+  color: color($colors, dark) !important;
+}
+
+
+// style for auth pages
+.auth-page {
+  background-color: #fff;
+  padding: 0 16px;
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .scroll-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background: rgba(50, 10, 92, .4);
+
+    .list-form {
+      padding: 0;
+      margin-bottom: 0;
+
+      ion-item {
+        background: none;
+        padding: 0;
+
+        &:first-child {
+          border-top: none;
+        }
+
+        &:after {
+          display: none;
+        }
+
+        ion-label {
+          font-size: 1em;
+          color: color($colors, primary);
+        }
+
+        input {
+          color: color($colors, primary);
+          border-left: none;
+        }
+      }
+    }
+  }
+}

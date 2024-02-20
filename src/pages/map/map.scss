@@ -1,0 +1,257 @@
+page-map {
+
+  ion-item {
+    background-color: transparent !important;
+  }
+
+  .toolbar-title {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  #my-map {
+    height: 100%;
+  }
+
+  .img-profile {
+    border-radius: 50%;
+    border: 5px solid color($colors, secondary);
+    background-color: white;
+    width: 9rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  .avatar-user-map {
+    z-index: 999;
+  }
+
+  .avatar-user-map {
+    // width:45%;
+  }
+
+  .info-user-map {
+    // width:55%;
+  }
+
+  .info-user-map {
+    // margin-left:-19px;
+  }
+
+  .start-chat-map {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+  }
+
+  .start-chat-map.name {
+    color: white;
+    background-color: color($colors, danger);
+    border: 2px solid #222;
+  }
+
+  .start-chat-map.init-chat {
+    color: white;
+    background-color: color($colors, secondary);
+    border: 2px solid #222;
+  }
+
+  .buttons-map {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .label-md,
+  .label-ios {
+    margin: 0;
+  }
+
+  .gm-style-iw {
+    background: transparent !important;
+    padding: 2em !important;
+    padding-bottom: 0px !important;
+    box-shadow: none !important;
+  }
+
+  .gm-style .gm-style-iw-t::after {
+    background: none !important;
+  }
+
+  .gm-style-iw-d {
+    overflow: auto !important;
+  }
+
+  .category {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    width: 50%;
+  }
+
+  .item-md.item-block .item-inner,
+  .item-ios.item-block .item-inner {
+    border-bottom: none;
+  }
+
+  .gmnoprint a,
+  .gmnoprint span,
+  .gm-style-cc,
+  .gm-style-mtc,
+  .gmnoprint {
+    display: none;
+  }
+
+  img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4_hdpi.png"] {
+    display: none !important;
+  }
+
+  #my-map>div>div>button {
+    display: none;
+  }
+
+  ion-footer {
+    //background: url("../assets/imgs/navbar_bg.png");
+    //background-size: cover;
+    //background: color($colors, danger);
+    background: linear-gradient(to left, #b03c50 0%, rgb(176, 46, 57) 66%, rgb(154, 34, 33) 100%) !important;
+    //background:linear-gradient(to left,#7b4397,#dc2430) !important;
+  }
+
+  .select-text,
+  .select-icon,
+  .label-md,
+  .label-ios {
+    color: white !important;
+  }
+
+  .item-md [item-start],
+  .item-ios [item-start] {
+    margin: 5px 8px 5px 0;
+  }
+
+  #my-map>div>div>div:nth-child(1)>div:nth-child(3)>div>div:nth-child(4)>div>div>div>div>button {
+    //width: 40px !important;
+    height: 40px !important;
+    top: -13px !important;
+    right: 15px !important;
+  }
+
+  #my-map>div>div>div:nth-child(1)>div:nth-child(3)>div>div:nth-child(4)>div>div>div>div>button img {
+    width: 35px !important;
+    height: 35px !important;
+    opacity: .8 !important;
+  }
+
+  .fab-in-list,
+  .fab[mini] {
+    margin: 10px;
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  ion-fab-list {
+    margin: 54px 2px;
+  }
+
+  .fab ion-icon {
+    font-size: 2rem;
+  }
+
+  .fabSubMenu,
+  .fabMenu button {
+    overflow: visible;
+    position: relative;
+    margin: 5px;
+
+    ion-label {
+      position: absolute;
+      left: 45px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      line-height: 24px;
+      padding: 2px 8px 0;
+      border-radius: 4px;
+      font-size: 1.4rem;
+    }
+
+    ion-label.light {
+      color: #f4f4f4;
+      background-color: #424241;
+    }
+
+    ion-label.dark {
+      color: #424241;
+      background-color: #f4f4f4;
+    }
+  }
+
+  .fab {
+    contain: layout;
+  }
+
+  #categoria_general::before {
+    padding-left: 0 !important;
+  }
+
+  .gmnoprint {
+    top: .5rem !important;
+    right: .5rem;
+  }
+
+  ion-fab.filter {
+    margin-right: 4.5rem;
+  }
+
+  ion-fab.alertFab {
+    // margin-left: 4.5rem;
+  }
+
+  ion-fab.alertFab button {
+    background-color: #fff;
+    border: 2px solid color($colors, 'danger');
+  }
+
+  ion-fab.alertFab ion-icon {
+    margin-top: -3px;
+    color: color($colors, 'danger');
+  }
+
+  .searchBy {
+    position: absolute;
+    left: inherit !important;
+    right: 0;
+    bottom: 4.5rem;
+    background-color: white !important;
+    color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid color($colors, danger);
+    max-width: 15rem;
+  }
+
+  .clearSearch {
+    position: absolute;
+    left: 45px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 24px;
+    padding: 2px 8px 0;
+    border-radius: 4px;
+    font-size: 1.4rem;
+  }
+
+  .gm-style-iw-c {
+    max-width: inherit !important;
+  }
+
+  ion-fab[bottom] {
+    bottom: 20px !important;
+  }
+
+  .visibilityBtn {
+    top: 50px !important;
+  }
+}

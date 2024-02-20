@@ -1,0 +1,50 @@
+page-alerts {
+  .toolbar-title {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .back-button {
+    color: color($colors, light);
+  }
+
+  p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .list-md, .list-ios {
+    margin: 0;
+  }
+
+  .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: none;
+  }
+
+  .item-md h2, .item-ios h2 {
+    padding-top: .6rem;
+    margin-bottom: 4px;
+    font-size: 1.8rem;
+  }
+
+  .item-md h2 small, .item-ios h2 small {
+    float: right;
+    padding-top: 4px;
+  }
+
+  ion-avatar img {
+    width: 50px !important;
+    height: 50px !important;
+    border: 1px solid lightgray;
+  }
+
+  ion-item p {
+    text-align: left;
+  }
+
+  .selfAlert h2 {
+    color: color($colors, danger);
+    font-weight: bold;
+  }
+
+}

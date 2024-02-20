@@ -1,0 +1,46 @@
+<ion-header>
+  <cabecera></cabecera>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-title padding-bottom="5" padding-top="5">FILTROS</ion-title>
+
+  <ion-item>
+    <ion-label>Modo oculto</ion-label>
+    <ion-toggle [(ngModel)]="user.visibility" checked="{{user.visibility}}"
+                color="danger"></ion-toggle>
+  </ion-item>
+
+  <ion-item class="range-item">Distancia</ion-item>
+
+  <ion-item class="range-item2">
+    Distancia
+    <ion-range color="danger" min="0" max="5000" step="10" [(ngModel)]="user.distance_filter">
+      <ion-label range-left>1km</ion-label>
+      <ion-label range-right>{{user.distance_filter}}km</ion-label>
+    </ion-range>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Categoría</ion-label>
+    <ion-select [(ngModel)]="user.category.name">
+      <ion-option *ngFor="let category of categories"
+                  value="{{categories_keys[category].name}}">{{categories_keys[category].logo | translate}}</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    Solicitar Ayuda
+    <button *ngIf="alert" ion-button item-end icon-start color="success" (click)="deleteHelp()">
+      <ion-icon name="checkmark"></ion-icon>
+      Solucionado
+    </button>
+    <button *ngIf="!alert" ion-button item-end icon-start color="danger" (click)="needHelp()">
+      <ion-icon name="warning"></ion-icon>
+      Avisar
+    </button>
+  </ion-item>
+
+
+</ion-content>

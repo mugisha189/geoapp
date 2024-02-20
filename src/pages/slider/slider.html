@@ -1,0 +1,39 @@
+<ion-content class="tutorial-page">
+
+  <ion-slides pager class="animated fadeIn delay-2s" #mySlides>
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <img src="assets/imgs/slide1.png"/>
+      <p>La nueva app de geolocalización en tiempo real
+        para interactuar con otros
+        usuarios y en diferentes servicios.</p>
+      <h2 class="slide-title">BIENVENIDO</h2>
+      <img src="assets/imgs/nextBtn.png" (click)="nextSlide()"/>
+    </ion-slide>
+    <ion-slide *ngFor="let slide of slides">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="light" (click)="goHome()">OMITIR</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slide.image" class="img-fluid" />
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <ion-row>
+        <ion-col col-12 text-center>
+          <img src="assets/imgs/photo.png" alt="" class="img-fluid animated fadeIn slide-logo">
+        </ion-col>
+      </ion-row>
+      <h2 class="slide-title">¿Listo para empezar?</h2>
+      <button ion-button large clear icon-end color="light" (click)="goHome()">
+        Continuar
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

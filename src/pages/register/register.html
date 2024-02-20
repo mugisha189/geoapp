@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Crear Usuario</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- Login form -->
+  <form>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="person" item-start></ion-icon>
+            Nombre
+          </ion-label>
+          <ion-input type="text" name="name" [(ngModel)]="user.name"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="person" item-start></ion-icon>
+            Apellidos
+          </ion-label>
+          <ion-input type="text" name="surname" [(ngModel)]="user.surname"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="person" item-start></ion-icon>
+            Alias
+          </ion-label>
+          <ion-input type="text" name="alias" [(ngModel)]="user.alias"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="mail" item-start></ion-icon>
+            Email
+          </ion-label>
+          <ion-input type="text" name="email" [(ngModel)]="user.email"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="lock" item-start></ion-icon>
+            Contraseña
+          </ion-label>
+          <ion-input type="password" name="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="phone-portrait" item-start></ion-icon>
+            Teléfono
+          </ion-label>
+          <ion-input type="number" name="phone" [(ngModel)]="user.phone"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="person" item-start></ion-icon>
+            Sexo
+          </ion-label>
+          <ion-select [(ngModel)]="user.sex" [ngModelOptions]="{standalone: true}" multiple="false" interface="popover">
+            <ion-option value="male">Hombre</ion-option>
+            <ion-option value="female">Mujer</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="calendar" item-start></ion-icon>
+            Fecha de Nacimiento
+          </ion-label>
+          <ion-datetime name="birthdate" displayFormat="DD-MM-YYYY" placeholder="Seleccionar Fecha" [(ngModel)]="user.birthdate"></ion-datetime>
+        </ion-item>
+      </ion-col>
+
+
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="albums" item-start></ion-icon>
+            Categoría
+          </ion-label>
+          <ion-select (ionChange)="onChange($event)" [(ngModel)]="user.category" [ngModelOptions]="{standalone: true}" multiple="false" interface="popover">
+            <ion-option *ngFor="let category of categories" value="{{categories_keys[category].name}}">{{category | translate}}</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+
+      <!--<ion-col col-12>-->
+        <!--<ion-item>-->
+          <!--<ion-label stacked>-->
+            <!--<ion-icon name="pricetag" item-start></ion-icon>-->
+            <!--Tag-->
+          <!--</ion-label>-->
+          <!--<ion-select disabled="{{tags_data}}" [(ngModel)]="user.tag" [ngModelOptions]="{standalone: true}" multiple="false" interface="popover">-->
+            <!--<ion-option *ngFor="let tag of tags" value="{{tag.id}}">{{tag.name}}</ion-option>-->
+          <!--</ion-select>-->
+        <!--</ion-item>-->
+      <!--</ion-col>-->
+
+      <ion-col col-12>
+        <ion-item>
+          <ion-label stacked>
+            <ion-icon name="clipboard" item-start></ion-icon>
+            Descripción
+          </ion-label>
+          <ion-textarea rows="6" name="description" [(ngModel)]="user.description"></ion-textarea>
+        </ion-item>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row text-center padding-bottom>
+      <ion-col col-12 text-center>
+        <button ion-button block color="danger" (click)="resgister()">REGISTRARSE</button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+
+</ion-content>

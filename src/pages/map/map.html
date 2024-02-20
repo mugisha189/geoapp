@@ -1,0 +1,70 @@
+<ion-header>
+	<cabecera></cabecera>
+</ion-header>
+
+<ion-content>
+	<div #map id="my-map" style="position: absolute; top: 0; left:0;right:0;bottom:0;height: 100%">
+
+	</div>
+
+	<ion-fab #fab bottom left class="fabMenu">
+		<button ion-fab color="danger" mini>
+			<ion-icon id="categoria_general" *ngIf="category.name == 'free'" name="menu"></ion-icon>
+			<img *ngIf="category.name != 'free'" src="{{'/assets/icon/' + category.logo + '_white.png'}}" />
+			<ion-label *ngIf="category.name == 'free'" class="{{icon_color}}">CATEGORÍAS</ion-label>
+			<ion-label *ngIf="category.name != 'free'" class="{{icon_color}}">{{category.logo | translate}}</ion-label>
+		</button>
+		<ion-fab-list side="top">
+			<button class="fabSubMenu" ion-fab *ngFor="let category of categories.slice().reverse()" color="{{bg_fab}}"
+				(click)="onChangeCategory({'name': categories_keys[category].name, 'isMarker': categories_keys[category].isMarkers, 'id': categories_keys[category].id, 'logo': categories_keys[category].logo})">
+				<!-- <ion-icon color="{{icon_color}}" name="{{categories_keys[category].logo}}"></ion-icon> -->
+				<img src="{{'/assets/icon/' + categories_keys[category].logo + '_white.png'}}" />
+				<ion-label class="{{icon_color}}">{{categories_keys[category].logo | translate}}</ion-label>
+			</button>
+
+		</ion-fab-list>
+	</ion-fab>
+
+	<ion-fab top left class="fabMenu">
+		<button ion-fab color="secondary" mini (click)="centerPosition()">
+			<ion-icon name="locate"></ion-icon>
+		</button>
+
+		<button ion-fab color="secondary" mini (click)="addBookMark()">
+			<ion-icon name="add"></ion-icon>
+		</button>
+	</ion-fab>
+
+	<ion-fab *ngIf="alerts.length > 0" top center class="fabMenu alertFab animated zoomIn infinite">
+		<button ion-fab color="danger" mini (click)="openAlerts()">
+			<ion-icon name="warning"></ion-icon>
+		</button>
+	</ion-fab>
+
+	<ion-fab top right class="fabMenu visibilityBtn">
+		<button ion-fab [color]="user.visibility ? 'light' : 'dark'" mini (click)="clickStealthMode()">
+			<ion-icon name="glasses"></ion-icon>
+		</button>
+	</ion-fab>
+
+	<!-- <ion-fab *ngIf="category.name != 'free'" bottom right class="fabMenu">
+		<button *ngIf="searchBy != ''" ion-fab color="danger" mini (click)="clearSearch()">
+			<ion-icon name="close"></ion-icon>
+			<ion-label class="searchBy">Buscando "{{searchBy}}"</ion-label>
+		</button>
+		<button *ngIf="searchBy == ''" ion-fab color="danger" mini (click)="search()">
+			<ion-icon name="search"></ion-icon>
+		</button>
+	</ion-fab> -->
+
+	<!-- <ion-fab *ngIf="category.name != 'free'" bottom right class="fabMenu filter">
+		<button *ngIf="selected_filters" ion-fab color="secondary" mini (click)="openFilters()">
+			<ion-icon name="funnel"></ion-icon>
+		</button>
+		<button *ngIf="!selected_filters" ion-fab color="danger" mini (click)="openFilters()">
+			<ion-icon name="funnel"></ion-icon>
+		</button>
+	</ion-fab> -->
+
+
+</ion-content>

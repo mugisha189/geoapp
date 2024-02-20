@@ -1,0 +1,70 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-android-support-gradle-release": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-background-geolocation": {
+      "ALWAYS_USAGE_DESCRIPTION": "This app always requires location tracking",
+      "MOTION_USAGE_DESCRIPTION": "This app requires motion detection",
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-background-mode": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-geolocation": {
+      "GPS_REQUIRED": "true",
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-request-location-accuracy": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "com.glosita.app"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-badge-fix": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.glosita.app"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.glosita.app"
+    }
+  }
+}

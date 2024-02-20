@@ -1,0 +1,50 @@
+<!--
+  Generated template for the TagsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Búsqueda Avanzada</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-row>
+
+    <ion-col col-12 *ngFor="let item of filters">
+      <ion-item>
+        <ion-label stacked>
+          <!--{{filter.dataname}}-->
+          {{item.dataname | translate}}
+        </ion-label>
+        <ion-input *ngIf="item.dataname != 'sex' && item.dataname != 'age'" name="{{item.dataname}}" [(ngModel)]="filter[item.dataname]"></ion-input>
+        <ion-select *ngIf="item.dataname == 'sex'" [(ngModel)]="filter[item.dataname]" [ngModelOptions]="{standalone: true}" multiple="false" interface="popover">
+          <ion-option value="male">Hombre</ion-option>
+          <ion-option value="female">Mujer</ion-option>
+        </ion-select>
+        <ion-range *ngIf="item.dataname == 'age'" dualKnobs="true" pin="true" color="danger" min="18" max="99" step="1" [(ngModel)]="rangeSlider">
+          <ion-label range-left>18</ion-label>
+          <ion-label range-right>99</ion-label>
+        </ion-range>
+      </ion-item>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row padding-top="5">
+    <ion-col col-6 text-center>
+      <button ion-button color="danger" (click)="searchByFilter()">Aplicar Filtros</button>
+    </ion-col>
+    <ion-col col-6 text-center>
+      <button [disabled]="disabledButton" ion-button color="secondary" (click)="clearFilters()">Limpiar Filtros</button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
